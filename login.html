@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+<body>
+<h1>LOGIN DETAIL</h1>
+<h2>Login</h2>
+<form action="/submit" method="post">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter phone number"><br><br>
+
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter email Address"><br><br>
+
+    <!-- Gender Section Added Here -->
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+
+    <label for="event">Select event:</label>
+    <select id="event" name="event" required>
+        <option value="">--select an event--</option>
+        <option value="seminar">Seminar</option>
+        <option value="workshop">Workshop</option>
+        <option value="hackothon">Hackothon</option>
+    </select>
+    <br><br>
+
+    <input type="submit" value="register">
+    <input type="reset" value="reset">
+</form>
+</body>
+</html>
